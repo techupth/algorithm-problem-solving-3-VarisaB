@@ -2,7 +2,7 @@ function sortCustomerName(customers) {
   // เริ่มเขียนโค้ดตรงนี้จ้า
   const n = customers.length;
   for (let i = 0; i < n; i++) {
-    for (let j = i; j < n - 1; j++) {
+    for (let j = 0; j < n - i - 1; j++) {
       if (customers[j] > customers[j + 1]) {
         let temp = customers[j];
         customers[j] = customers[j + 1];
@@ -14,7 +14,7 @@ function sortCustomerName(customers) {
   return customers;
 }
 
-const exCustomers = ["Somchai", "Arthit", "Suchada", "Napasorn", "Pimchanok"];
+const exCustomers = ["Somchai", "Suchada", "Arthit", "Napasorn", "Pimchanok"];
 sortCustomerName(exCustomers);
 
 // ตอบคำถามตรงนี้จ้า
